@@ -1,0 +1,9 @@
+D:\Coding\CoreBlog\CORE_BLOG.Entity\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.deps.json
+D:\Coding\CoreBlog\CORE_BLOG.Entity\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.dll
+D:\Coding\CoreBlog\CORE_BLOG.Entity\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.pdb
+D:\Coding\CoreBlog\CORE_BLOG.Entity\obj\Debug\netcoreapp2.0\CORE_BLOG.Entity.csproj.CoreCompileInputs.cache
+D:\Coding\CoreBlog\CORE_BLOG.Entity\obj\Debug\netcoreapp2.0\CORE_BLOG.Entity.AssemblyInfoInputs.cache
+D:\Coding\CoreBlog\CORE_BLOG.Entity\obj\Debug\netcoreapp2.0\CORE_BLOG.Entity.AssemblyInfo.cs
+D:\Coding\CoreBlog\CORE_BLOG.Entity\obj\Debug\netcoreapp2.0\CORE_BLOG.Entity.dll
+D:\Coding\CoreBlog\CORE_BLOG.Entity\obj\Debug\netcoreapp2.0\CORE_BLOG.Entity.pdb
+D:\Coding\CoreBlog\CORE_BLOG.Entity\obj\Debug\netcoreapp2.0\CORE_BLOG.Entity.csprojAssemblyReference.cache
