@@ -37,7 +37,7 @@ namespace CORE_BLOG.Controllers
             }
             catch (Exception ex)
             {
-                return "系统出现错误,请联系管理员.";
+                return "Error";
             }
         }
     }

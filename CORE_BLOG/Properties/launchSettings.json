@@ -9,9 +9,9 @@
   },
   "profiles": {
     "IIS Express": {
-      "commandName": "IISExpress", 
+      "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "page/htmlpage.html",
+      "launchUrl": "page/Login/Login.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -19,7 +19,7 @@
     "CORE_BLOG": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "page/htmlpage.html",
+      "launchUrl": "page/Login/Login.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

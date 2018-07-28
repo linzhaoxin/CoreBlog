@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="../../Content/css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="../../Content/css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="../../Content/css/component.css" />
+    <script src="../../Content/vue/vue.js"></script>
+    <script src="../../Content/vue/vue-resource.js"></script>
+</head>
+<body>
+    <div id="app" class="container demo-1">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="logo_box">
+                    <h3 >{{BlogShow}}</h3>
+                    <form action="" name="f" method="post">
+                        <div id="logintxt">
+                            <div class="input_outer">
+                                <span class="u_user"></span>
+                                <input v-model="USER_NAME" name="logname" class="text" style="color: #FFFFFF !important" type="text" placeholder="请输入用户名称">
+                            </div>
+                            <div class="input_outer">
+                                <span class="us_uer"></span>
+                                <input v-model="USER_PASSWORD" name="logpass" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;" value="" type="password" placeholder="请输入用户密码">
+                            </div>
+                        </div>
+                        <div class="mb2"> <span style="color: #FFFFFF;font-size:12px">>>还没账号？去注册</span><a class="act-but submit" v-on:click="submit" href="javascript:;" style="color: #FFFFFF">登录</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../Content/js/tweenlite.min.js"></script>
+    <script type="text/javascript" src="../../Content/js/easepack.min.js"></script>
+    <script type="text/javascript" src="../../Content/js/raf.js"></script>
+    <script type="text/javascript" src="../../Content/js/demo-1.js"></script>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                USER_NAME: "",
+                USER_PASSWORD: "",
+                BlogShow: "欢迎来到博客"
+            },
+            methods: {
+                submit: function () {
+                    if (this.USER_NAME == "") {
+                        return this.BlogShow = "请输入用户名称!";
+                    }
+                    if (this.USER_PASSWORD == "") {
+                        return this.BlogShow = "请输入用户密码!";
+                    }
+                    var jsonObj = JSON.stringify({ USER_NAME: this.USER_NAME, USER_PASSWORD: this.USER_PASSWORD });
+                    this.$http.post('/api/CB_LOGIN/USER_LOGIN', jsonObj).then((response) => {
+
+                        if (response.body.length == 0) {
+                            return this.BlogShow = "用户信息不存在.";
+                        }
+                        if (response.body[0] == "Error") {
+                            return this.BlogShow = "系统出现错误,请联系管理员.";
+                        }
+                        else {
+                            
+                        }
+                    });
+                }
+            }
+        })
+    </script>
+</body>
+</html>
