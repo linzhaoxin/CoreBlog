@@ -1,0 +1,12 @@
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\obj\Debug\netcoreapp2.0\CORE_BLOG.IDAL.csprojAssemblyReference.cache
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\obj\Debug\netcoreapp2.0\CORE_BLOG.IDAL.csproj.CoreCompileInputs.cache
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\obj\Debug\netcoreapp2.0\CORE_BLOG.IDAL.AssemblyInfoInputs.cache
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\obj\Debug\netcoreapp2.0\CORE_BLOG.IDAL.AssemblyInfo.cs
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.deps.json
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.dll
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.pdb
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.dll
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.pdb
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\obj\Debug\netcoreapp2.0\CORE_BLOG.IDAL.csproj.CopyComplete
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\obj\Debug\netcoreapp2.0\CORE_BLOG.IDAL.dll
+D:\Coding\CoreBlog\CORE_BLOG.IDAL\obj\Debug\netcoreapp2.0\CORE_BLOG.IDAL.pdb

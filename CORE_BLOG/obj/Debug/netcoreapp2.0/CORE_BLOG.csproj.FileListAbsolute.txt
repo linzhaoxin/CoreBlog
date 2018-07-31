@@ -10,11 +10,13 @@ D:\Coding\CoreBlog\CORE_BLOG\obj\Debug\netcoreapp2.0\CORE_BLOG.dll
 D:\Coding\CoreBlog\CORE_BLOG\obj\Debug\netcoreapp2.0\CORE_BLOG.pdb
 D:\Coding\CoreBlog\CORE_BLOG\obj\Debug\netcoreapp2.0\CORE_BLOG.csprojAssemblyReference.cache
 D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.BLL.dll
-D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.dll
-D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.dll
 D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.dll
 D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.BLL.pdb
 D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.pdb
-D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.pdb
-D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.pdb
 D:\Coding\CoreBlog\CORE_BLOG\obj\Debug\netcoreapp2.0\CORE_BLOG.csproj.CopyComplete
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.IBLL.dll
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.dll
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.IBLL.pdb
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.pdb
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.dll
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.pdb

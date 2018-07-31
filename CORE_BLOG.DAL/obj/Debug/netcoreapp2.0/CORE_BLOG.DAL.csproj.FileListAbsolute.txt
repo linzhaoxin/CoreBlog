@@ -5,10 +5,10 @@ D:\Coding\CoreBlog\CORE_BLOG.DAL\obj\Debug\netcoreapp2.0\CORE_BLOG.DAL.AssemblyI
 D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.deps.json
 D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.dll
 D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.pdb
-D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.dll
 D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.dll
 D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.pdb
-D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.pdb
 D:\Coding\CoreBlog\CORE_BLOG.DAL\obj\Debug\netcoreapp2.0\CORE_BLOG.DAL.csproj.CopyComplete
 D:\Coding\CoreBlog\CORE_BLOG.DAL\obj\Debug\netcoreapp2.0\CORE_BLOG.DAL.dll
 D:\Coding\CoreBlog\CORE_BLOG.DAL\obj\Debug\netcoreapp2.0\CORE_BLOG.DAL.pdb
+D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.dll
+D:\Coding\CoreBlog\CORE_BLOG.DAL\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.pdb

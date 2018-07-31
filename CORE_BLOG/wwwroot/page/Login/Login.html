@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="../../Content/css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="../../Content/css/demo.css" />
     <link type="text/css" rel="stylesheet" href="../../Content/css/component.css" />
+
     <script src="../../Content/vue/vue.js"></script>
     <script src="../../Content/vue/vue-resource.js"></script>
 </head>
@@ -57,7 +58,6 @@
                     }
                     var jsonObj = JSON.stringify({ USER_NAME: this.USER_NAME, USER_PASSWORD: this.USER_PASSWORD });
                     this.$http.post('/api/CB_LOGIN/USER_LOGIN', jsonObj).then((response) => {
-
                         if (response.body.length == 0) {
                             return this.BlogShow = "用户信息不存在.";
                         }
@@ -65,7 +65,10 @@
                             return this.BlogShow = "系统出现错误,请联系管理员.";
                         }
                         else {
-                            
+                            var JsonObj = response.body[0];
+                            console.info(JsonObj);
+                            console.info(JsonObj.USER_NAME);
+                           // location.href = "../Index/index.html";
                         }
                     });
                 }

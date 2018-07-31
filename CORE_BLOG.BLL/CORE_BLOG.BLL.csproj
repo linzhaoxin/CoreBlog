@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CORE_BLOG.DAL\CORE_BLOG.DAL.csproj" />
     <ProjectReference Include="..\CORE_BLOG.Entity\CORE_BLOG.Entity.csproj" />
-    <ProjectReference Include="..\CORE_BLOG.Utility\CORE_BLOG.Common.Utility.csproj" />
+    <ProjectReference Include="..\CORE_BLOG.IBLL\CORE_BLOG.IBLL.csproj" />
+    <ProjectReference Include="..\CORE_BLOG.IDAL\CORE_BLOG.IDAL.csproj" />
   </ItemGroup>
 
 </Project>

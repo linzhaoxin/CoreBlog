@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper.Contrib.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,6 +9,7 @@ namespace CORE_BLOG.Entity
     /// user:实体类(属性说明自动提取数据库字段的描述信息)
     /// </summary>
     [Serializable]
+    [Table("USER")]
     public partial class USER
     {
         public USER()
@@ -17,9 +19,11 @@ namespace CORE_BLOG.Entity
         private string _user_name;
         private string _user_password;
         private UInt64 _user_role;
+
         /// <summary>
         /// auto_increment
         /// </summary>
+        [Key]
         public int USER_ID
         {
             set { _user_id = value; }
@@ -50,6 +54,5 @@ namespace CORE_BLOG.Entity
             get { return _user_role; }
         }
         #endregion Model
-
     }
 }

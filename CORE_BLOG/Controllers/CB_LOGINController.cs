@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using CORE_BLOG.BLL;
 using CORE_BLOG.Entity;
+using CORE_BLOG.IBLL;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
@@ -14,14 +12,15 @@ namespace CORE_BLOG.Controllers
     [Route("api/[controller]/[action]")]
     public class CB_LOGINController : Controller
     {
-        USER_LOGIN_BLL _uSER_LOGIN_BLL = new USER_LOGIN_BLL();
-        public CONNECTION_STRINGS _cONNECTION;
-        
-        public CB_LOGINController(IOptions<CONNECTION_STRINGS> setting)
+        private CONNECTION_STRINGS _cONNECTION;
+        private USER_LOGIN_IBLL _uSER_LOGIN_IBLL;
+        public CB_LOGINController(USER_LOGIN_IBLL uSER_LOGIN_IBLL, IOptions<CONNECTION_STRINGS> setting)
         {
+            this._uSER_LOGIN_IBLL = uSER_LOGIN_IBLL;
             _cONNECTION = setting.Value;
         }
 
+        [HttpGet]
         [HttpPost]
         //根据用户的信息进行登陆
         public string USER_LOGIN([FromBody]dynamic obj)
@@ -32,7 +31,7 @@ namespace CORE_BLOG.Controllers
                 string userName = obj.USER_NAME.ToString();
                 //用户密码
                 string userPassword = obj.USER_PASSWORD.ToString();
-                var userList = _uSER_LOGIN_BLL.USER_LOGIN(_cONNECTION.MySqlConnection, userName, userPassword);
+                var userList = _uSER_LOGIN_IBLL.USER_LOGIN(_cONNECTION.MySqlConnection, userName, userPassword);
                 return JsonConvert.SerializeObject(userList);
             }
             catch (Exception ex)

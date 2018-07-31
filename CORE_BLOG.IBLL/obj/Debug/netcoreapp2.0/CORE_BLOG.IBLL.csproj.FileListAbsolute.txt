@@ -1,0 +1,12 @@
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\bin\Debug\netcoreapp2.0\CORE_BLOG.IBLL.deps.json
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\bin\Debug\netcoreapp2.0\CORE_BLOG.IBLL.dll
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\bin\Debug\netcoreapp2.0\CORE_BLOG.IBLL.pdb
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\obj\Debug\netcoreapp2.0\CORE_BLOG.IBLL.csprojAssemblyReference.cache
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\obj\Debug\netcoreapp2.0\CORE_BLOG.IBLL.csproj.CoreCompileInputs.cache
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\obj\Debug\netcoreapp2.0\CORE_BLOG.IBLL.AssemblyInfoInputs.cache
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\obj\Debug\netcoreapp2.0\CORE_BLOG.IBLL.AssemblyInfo.cs
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\obj\Debug\netcoreapp2.0\CORE_BLOG.IBLL.dll
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\obj\Debug\netcoreapp2.0\CORE_BLOG.IBLL.pdb
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.dll
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\bin\Debug\netcoreapp2.0\CORE_BLOG.Entity.pdb
+D:\Coding\CoreBlog\CORE_BLOG.IBLL\obj\Debug\netcoreapp2.0\CORE_BLOG.IBLL.csproj.CopyComplete

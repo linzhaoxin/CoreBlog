@@ -18,8 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CORE_BLOG.BLL\CORE_BLOG.BLL.csproj" />
-    <ProjectReference Include="..\CORE_BLOG.Entity\CORE_BLOG.Entity.csproj" />
-    <ProjectReference Include="..\CORE_BLOG.Utility\CORE_BLOG.Common.Utility.csproj" />
+    <ProjectReference Include="..\CORE_BLOG.DAL\CORE_BLOG.DAL.csproj" />
   </ItemGroup>
 
 </Project>

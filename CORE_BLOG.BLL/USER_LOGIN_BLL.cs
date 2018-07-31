@@ -1,5 +1,6 @@
-﻿using CORE_BLOG.DAL;
-using CORE_BLOG.Entity;
+﻿using CORE_BLOG.Entity;
+using CORE_BLOG.IBLL;
+using CORE_BLOG.IDAL;
 using Dapper;
 using System;
 using System.Collections.Generic;
@@ -7,16 +8,19 @@ using System.Text;
 
 namespace CORE_BLOG.BLL
 {
-    public class USER_LOGIN_BLL
+    public class USER_LOGIN_BLL: USER_LOGIN_IBLL
     {
-        USER_DAL _uSER_DAL = new USER_DAL();
+        private USER_IDAL _uSER_IDAL;
+        public USER_LOGIN_BLL(USER_IDAL uSER_IDAL)
+        {
+            this._uSER_IDAL = uSER_IDAL;
+        }
         public IList<USER> USER_LOGIN(string connection,string userName,string userPassword)
         {
-            var param = new DynamicParameters();
-            string sql = "select USER_ID,USER_NAME,USER_PASSWORD,USER_ROLE from user  where USER_NAME=@USER_NAME and USER_PASSWORD=@USER_PASSWORD";
-            param.Add("USER_NAME", userName);
-            param.Add("USER_PASSWORD", userPassword);
-            return _uSER_DAL.USER_LOGIN(connection, sql, param);
+            string sql = "SELECT * FROM `USER` U   WHERE 1=1";
+          //  param.Add("USER_NAME", userName);
+          //  param.Add("USER_PASSWORD", userPassword);
+            return _uSER_IDAL.USER_LOGIN(connection, sql);
         }
     }
 }
