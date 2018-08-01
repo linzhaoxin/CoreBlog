@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CORE_BLOG.Entity
@@ -8,12 +10,13 @@ namespace CORE_BLOG.Entity
     /// user_personal:实体类(属性说明自动提取数据库字段的描述信息)
     /// </summary>
     [Serializable]
+    [Table("USER_PERSONAL")]
     public partial class USER_PERSONAL
     {
         public USER_PERSONAL()
         { }
         #region Model
-        private int _personal_id;
+        private int? _personal_id;
         private int _user_id;
         private string _personal_name;
         private bool _personal_gender;
@@ -22,7 +25,8 @@ namespace CORE_BLOG.Entity
         /// <summary>
         /// auto_increment
         /// </summary>
-        public int PERSONAL_ID
+        [Key]
+        public int? PERSONAL_ID
         {
             set { _personal_id = value; }
             get { return _personal_id; }

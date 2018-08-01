@@ -17,10 +17,7 @@ namespace CORE_BLOG.BLL
         }
         public IList<USER> USER_LOGIN(string connection,string userName,string userPassword)
         {
-            string sql = "SELECT * FROM `USER` U   WHERE 1=1";
-          //  param.Add("USER_NAME", userName);
-          //  param.Add("USER_PASSWORD", userPassword);
-            return _uSER_IDAL.USER_LOGIN(connection, sql);
+            return _uSER_IDAL.USER_LOGIN(connection, userName, userPassword);
         }
     }
 }

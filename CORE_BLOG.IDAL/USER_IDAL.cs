@@ -14,6 +14,6 @@ namespace CORE_BLOG.IDAL
         /// <param name="connection"></param>
         /// <param name="cmd"></param>
         /// <returns></returns>
-        IList<USER> USER_LOGIN(string connection, string cmd);
+        IList<USER> USER_LOGIN(string connection, string userName, string userPassword);
     }
 }

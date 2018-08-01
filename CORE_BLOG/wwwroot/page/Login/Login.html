@@ -66,9 +66,14 @@
                         }
                         else {
                             var JsonObj = response.body[0];
-                            console.info(JsonObj);
-                            console.info(JsonObj.USER_NAME);
-                           // location.href = "../Index/index.html";
+                            localStorage.setItem("USER_ID", JsonObj.USER_ID);
+                            localStorage.setItem("USER_NAME", JsonObj.USER_NAME);
+                            localStorage.setItem("PERSONAL_COUNTRY", JsonObj.USER_PERSONAL.PERSONAL_COUNTRY);
+                            localStorage.setItem("PERSONAL_GENDER", JsonObj.USER_PERSONAL.PERSONAL_GENDER);
+                            localStorage.setItem("PERSONAL_ID", JsonObj.USER_PERSONAL.PERSONAL_ID);
+                            localStorage.setItem("PERSONAL_NAME", JsonObj.USER_PERSONAL.PERSONAL_NAME);
+                            localStorage.setItem("PERSONAL_PHONE", JsonObj.USER_PERSONAL.PERSONAL_PHONE);
+                            location.href = "../Index/index.html";
                         }
                     });
                 }

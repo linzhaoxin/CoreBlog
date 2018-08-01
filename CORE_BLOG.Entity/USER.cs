@@ -19,6 +19,7 @@ namespace CORE_BLOG.Entity
         private string _user_name;
         private string _user_password;
         private UInt64 _user_role;
+        private USER_PERSONAL _user_personal;
 
         /// <summary>
         /// auto_increment
@@ -52,6 +53,12 @@ namespace CORE_BLOG.Entity
         {
             set { _user_role = value; }
             get { return _user_role; }
+        }
+
+        public USER_PERSONAL USER_PERSONAL
+        {
+            set { _user_personal = value; }
+            get { return _user_personal; }
         }
         #endregion Model
     }
