@@ -9,11 +9,12 @@ namespace CORE_BLOG.IDAL
     public interface USER_IDAL
     {
         /// <summary>
-        /// 获取用户登陆信息
+        /// 用户的登陆查询
         /// </summary>
-        /// <param name="connection"></param>
-        /// <param name="cmd"></param>
+        /// <param name="connection">sql</param>
+        /// <param name="userName">用户名称</param>
+        /// <param name="userPassword">用户密码</param>
         /// <returns></returns>
-        IList<USER> USER_LOGIN(string connection, string userName, string userPassword);
+        IList<USER> UserLogin(string connection, string userName, string userPassword);
     }
 }

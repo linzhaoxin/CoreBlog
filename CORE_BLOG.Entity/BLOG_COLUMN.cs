@@ -16,8 +16,10 @@ namespace CORE_BLOG.Entity
         private int _column_id;
         private int _personal_id;
         private string _column_name;
+        private string _colum_synopsis;
         private DateTime? _column_creationtime;
         private DateTime? _column_upatatime;
+        private BLOG_CONTENT _blog_content;
         /// <summary>
         /// auto_increment
         /// </summary>
@@ -42,6 +44,13 @@ namespace CORE_BLOG.Entity
             set { _column_name = value; }
             get { return _column_name; }
         }
+        
+
+        public string COLUMN_SYNOPSIS
+        {
+            set { _colum_synopsis = value; }
+            get { return _colum_synopsis; }
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -57,6 +66,13 @@ namespace CORE_BLOG.Entity
         {
             set { _column_upatatime = value; }
             get { return _column_upatatime; }
+        }
+
+        public BLOG_CONTENT BLOG_CONTENT
+        {
+            set { _blog_content = value; }
+            get { return _blog_content; }
+            
         }
         #endregion Model
 

@@ -22,6 +22,8 @@ namespace CORE_BLOG.Entity
         private bool _personal_gender;
         private string _personal_phone;
         private string _personal_country;
+        private string _personal_city;
+        private string _personal_synopsis;
         /// <summary>
         /// auto_increment
         /// </summary>
@@ -71,6 +73,18 @@ namespace CORE_BLOG.Entity
             set { _personal_country = value; }
             get { return _personal_country; }
         }
+
+        public string PERSONAL_CITY
+        {
+            set { _personal_city = value; }
+            get { return _personal_city; }
+        }
+        public string PERSONAL_SYNOPSIS
+        {
+            set { _personal_synopsis = value; }
+            get { return _personal_synopsis; }
+        }
+        
         #endregion Model
 
     }

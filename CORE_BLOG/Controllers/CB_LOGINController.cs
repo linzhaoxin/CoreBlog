@@ -23,7 +23,7 @@ namespace CORE_BLOG.Controllers
         [HttpGet]
         [HttpPost]
         //根据用户的信息进行登陆
-        public string USER_LOGIN([FromBody]dynamic obj)
+        public string UserLogin([FromBody]dynamic obj)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace CORE_BLOG.Controllers
                 string userName = obj.USER_NAME.ToString();
                 //用户密码
                 string userPassword = obj.USER_PASSWORD.ToString();
-                var userList = _uSER_LOGIN_IBLL.USER_LOGIN(_cONNECTION.MySqlConnection, userName, userPassword);
+                var userList = _uSER_LOGIN_IBLL.UserLogin(_cONNECTION.MySqlConnection, userName, userPassword);
                 return JsonConvert.SerializeObject(userList);
             }
             catch (Exception ex)

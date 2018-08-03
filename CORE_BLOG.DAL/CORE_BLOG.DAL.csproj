@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CORE_BLOG.Common.Utility\CORE_BLOG.Common.Utility.csproj" />
     <ProjectReference Include="..\CORE_BLOG.Entity\CORE_BLOG.Entity.csproj" />
     <ProjectReference Include="..\CORE_BLOG.IDAL\CORE_BLOG.IDAL.csproj" />
   </ItemGroup>

@@ -8,13 +8,20 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using CORE_BLOG.IDAL;
+using CORE_BLOG.Common.Utility;
 
 namespace CORE_BLOG.DAL
 {
-    public  class USER_DAL : USER_IDAL
+    public  class USER_DAL : DAPPER_HELPER<USER>, USER_IDAL
     {
-
-        public  IList<USER> USER_LOGIN(string connection, string userName, string userPassword)
+        /// <summary>
+        /// 用户的登陆查询
+        /// </summary>
+        /// <param name="connection">sql</param>
+        /// <param name="userName">用户名称</param>
+        /// <param name="userPassword">用户密码</param>
+        /// <returns></returns>
+        public  IList<USER> UserLogin(string connection, string userName, string userPassword)
         {
             string sql = "SELECT * FROM USER U " +
                          "INNER JOIN  USER_PERSONAL UP ON U.USER_ID = UP.USER_ID " +
@@ -22,15 +29,15 @@ namespace CORE_BLOG.DAL
             DynamicParameters param = new DynamicParameters();
             param.Add("USER_NAME", userName);
             param.Add("USER_PASSWORD", userPassword);
-            IList<USER> _uSER = new List<USER>();
-            using (MySqlConnection conn = new MySqlConnection(connection))
+            IList<USER> _user = new List<USER>();
+            using (IDbConnection conn = GetSqlConnection(connection))
             {
-                _uSER = conn.Query<USER,USER_PERSONAL,USER>(sql,(user, user_personal)=> {
+                _user = conn.Query<USER,USER_PERSONAL,USER>(sql,(user, user_personal)=> {
                     user.USER_PERSONAL = user_personal;
                     return user;
                 }, param, splitOn: "PERSONAL_ID").ToList();
             }
-            return _uSER;
+            return _user;
         }
     }
 }

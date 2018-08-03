@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>欢迎来到我的博客</title>
     <link type="text/css" rel="stylesheet" href="../../Content/css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="../../Content/css/demo.css" />
     <link type="text/css" rel="stylesheet" href="../../Content/css/component.css" />
@@ -57,7 +57,7 @@
                         return this.BlogShow = "请输入用户密码!";
                     }
                     var jsonObj = JSON.stringify({ USER_NAME: this.USER_NAME, USER_PASSWORD: this.USER_PASSWORD });
-                    this.$http.post('/api/CB_LOGIN/USER_LOGIN', jsonObj).then((response) => {
+                    this.$http.post('/api/CB_LOGIN/UserLogin', jsonObj).then((response) => {
                         if (response.body.length == 0) {
                             return this.BlogShow = "用户信息不存在.";
                         }
@@ -66,6 +66,7 @@
                         }
                         else {
                             var JsonObj = response.body[0];
+                            console.info(JsonObj);
                             localStorage.setItem("USER_ID", JsonObj.USER_ID);
                             localStorage.setItem("USER_NAME", JsonObj.USER_NAME);
                             localStorage.setItem("PERSONAL_COUNTRY", JsonObj.USER_PERSONAL.PERSONAL_COUNTRY);
@@ -73,7 +74,9 @@
                             localStorage.setItem("PERSONAL_ID", JsonObj.USER_PERSONAL.PERSONAL_ID);
                             localStorage.setItem("PERSONAL_NAME", JsonObj.USER_PERSONAL.PERSONAL_NAME);
                             localStorage.setItem("PERSONAL_PHONE", JsonObj.USER_PERSONAL.PERSONAL_PHONE);
-                            location.href = "../Index/index.html";
+                            localStorage.setItem("PERSONAL_CITY", JsonObj.USER_PERSONAL.PERSONAL_CITY);
+                            localStorage.setItem("PERSONAL_SYNOPSIS", JsonObj.USER_PERSONAL.PERSONAL_SYNOPSIS);
+                            location.href = "../Index/Index.html";
                         }
                     });
                 }

@@ -5241,10 +5241,26 @@
           "bin/placeholder/CORE_BLOG.BLL.dll": {}
         }
       },
+      "CORE_BLOG.Common.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Dapper": "1.50.5",
+          "Dapper.Contrib": "1.50.5",
+          "MySql.Data": "8.0.12"
+        },
+        "compile": {
+          "bin/placeholder/CORE_BLOG.Common.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CORE_BLOG.Common.Utility.dll": {}
+        }
+      },
       "CORE_BLOG.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "CORE_BLOG.Common.Utility": "1.0.0",
           "CORE_BLOG.Entity": "1.0.0",
           "CORE_BLOG.IDAL": "1.0.0",
           "Dapper": "1.50.5",
@@ -13769,6 +13785,11 @@
       "type": "project",
       "path": "../CORE_BLOG.BLL/CORE_BLOG.BLL.csproj",
       "msbuildProject": "../CORE_BLOG.BLL/CORE_BLOG.BLL.csproj"
+    },
+    "CORE_BLOG.Common.Utility/1.0.0": {
+      "type": "project",
+      "path": "../CORE_BLOG.Common.Utility/CORE_BLOG.Common.Utility.csproj",
+      "msbuildProject": "../CORE_BLOG.Common.Utility/CORE_BLOG.Common.Utility.csproj"
     },
     "CORE_BLOG.DAL/1.0.0": {
       "type": "project",

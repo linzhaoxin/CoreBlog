@@ -34,7 +34,8 @@ namespace CORE_BLOG
             services.Configure<CONNECTION_STRINGS>(Configuration.GetSection("ConnectionStrings"));
             services.AddScoped<USER_IDAL, USER_DAL>();
             services.AddScoped<USER_LOGIN_IBLL, USER_LOGIN_BLL>();
-
+            services.AddScoped<BLOG_COLUMN_IDAL, BLOG_COLUMN_DAL>();
+            services.AddScoped<BLOG_COLUMN_IBLL, BLOG_COLUMN_BLL>();
             services.AddMvc();
         }
 

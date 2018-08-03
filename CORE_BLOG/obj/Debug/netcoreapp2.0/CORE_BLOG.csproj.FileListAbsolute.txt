@@ -20,3 +20,5 @@ D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.IBLL.pdb
 D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.IDAL.pdb
 D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.dll
 D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.DAL.pdb
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.dll
+D:\Coding\CoreBlog\CORE_BLOG\bin\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.pdb

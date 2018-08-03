@@ -6,3 +6,4 @@ D:\Coding\CoreBlog\CORE_BLOG.Common.Utility\obj\Debug\netcoreapp2.0\CORE_BLOG.Co
 D:\Coding\CoreBlog\CORE_BLOG.Common.Utility\bin\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.pdb
 D:\Coding\CoreBlog\CORE_BLOG.Common.Utility\obj\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.dll
 D:\Coding\CoreBlog\CORE_BLOG.Common.Utility\obj\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.pdb
+D:\Coding\CoreBlog\CORE_BLOG.Common.Utility\obj\Debug\netcoreapp2.0\CORE_BLOG.Common.Utility.csprojAssemblyReference.cache

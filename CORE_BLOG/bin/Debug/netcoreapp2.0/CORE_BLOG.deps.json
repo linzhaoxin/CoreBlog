@@ -4246,8 +4246,22 @@
           "CORE_BLOG.BLL.dll": {}
         }
       },
+      "CORE_BLOG.Common.Utility/1.0.0": {
+        "dependencies": {
+          "Dapper": "1.50.5",
+          "Dapper.Contrib": "1.50.5",
+          "MySql.Data": "8.0.12"
+        },
+        "runtime": {
+          "CORE_BLOG.Common.Utility.dll": {}
+        },
+        "compile": {
+          "CORE_BLOG.Common.Utility.dll": {}
+        }
+      },
       "CORE_BLOG.DAL/1.0.0": {
         "dependencies": {
+          "CORE_BLOG.Common.Utility": "1.0.0",
           "CORE_BLOG.Entity": "1.0.0",
           "CORE_BLOG.IDAL": "1.0.0",
           "Dapper": "1.50.5",
@@ -6685,6 +6699,11 @@
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "CORE_BLOG.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CORE_BLOG.Common.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

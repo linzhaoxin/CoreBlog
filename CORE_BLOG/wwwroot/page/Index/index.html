@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="gb2312">
-    <title>个人博客模板</title>
+    <title>个人博客中心</title>
     <link href="../../Content/css/styles.css" rel="stylesheet" />
     <script src="../../Content/vue/vue.js"></script>
     <script src="../../Content/vue/vue-resource.js"></script>
 </head>
 <body>
-    <div  id="app">
+    <div id="app">
         <div class="mainContent">
             <aside>
                 <div class="avatar">
@@ -16,11 +16,11 @@
                 </div>
                 <div class="userinfo">
                     <p class="fname"><a href="/dancesmile">{{USER_NAME}}</a>  </p>
-                    <p>现居：四川成都</p>
+                    <p>现居：{{PERSONAL_CITY}}</p>
                 </div>
                 <section class="topspaceinfo">
-                    <h1>执子之手，与子偕老</h1>
-                    <p>于千万人之中，我遇见了我所遇见的人....</p>
+                    <h1>个人简介：</h1>
+                    <p>{{PERSONAL_SYNOPSIS}}</p>
                 </section>
                 <div class="userinfo">
                     <p class="q-fans"> 粉丝：<a href="#">167</a></p>
@@ -50,25 +50,17 @@
                 </section>
             </aside>
             <div class="blogitem">
-                <article>
-                    <h2 class="title"><a href="#">陌上花开，可缓缓归矣</a></h2>
-                    <ul class="text">
-                        <p>“陌上花开，可缓缓归矣。” 含义：（夫人），田间阡陌上的花开了，你可以一边赏花，一边慢慢地回来。</p>
-                    </ul>
-                    <div class="textfoot">
-                        <a href="#">阅读全文</a><a href="#">评论</a><a href="#">转载</a>
-                    </div>
-                </article>
-                <article>
-                    <h2 class="title"><a href="#">岁月留痕——我的2010</a></h2>
-                    <ul class="text">
-                        <p>岁月留痕之时光</p>
-                        <p>每逢新旧年交替时候，我就被笼罩在一股茫然的思绪里，逃也逃不脱，避也避不开，唯有让心事在静静流逝的时光里苍茫成河。</p>
-                    </ul>
-                    <div class="textfoot">
-                        <a href="#">阅读全文</a><a href="#">评论</a><a href="#">转载</a>
-                    </div>
-                </article>
+                <template v-for="blog in BlogJson">
+                    <article>
+                        <h2 class="title"><a href="#">{{blog.COLUMN_NAME}}</a></h2>
+                        <ul class="text">
+                            <p> {{blog.COLUMN_SYNOPSIS}}</p>
+                        </ul>
+                        <div class="textfoot">
+                            <a href="#">阅读全文</a><!--<a href="#">评论</a>--><a href="#">删除</a>
+                        </div>
+                    </article>
+                </template>
                 <div class="pages"><span>1</span><a href="#" hidefocus="">2</a><a href="#" hidefocus="">3</a><a href="#" class="next">下一页&gt;&gt;</a></div>
             </div>
         </div>
@@ -90,10 +82,28 @@
             el: '#app',
             data: {
                 USER_NAME: localStorage.getItem("PERSONAL_NAME"),
-           
+                PERSONAL_CITY: localStorage.getItem("PERSONAL_CITY"),
+                PERSONAL_SYNOPSIS: localStorage.getItem("PERSONAL_SYNOPSIS"),
+                BlogJson: []
+            },
+            mounted: function () {
+                var PERSONAL_ID = localStorage.getItem("PERSONAL_ID");
+                var start = 0;
+                var end = 5;
+                var jsonObj = JSON.stringify({ PERSONAL_ID: PERSONAL_ID, start: start, end: end });
+                this.BlogList(jsonObj);
             },
             methods: {
-         
+                BlogList: function (jsonObj) {
+                    this.$http.post('/api/CB_BLOG/BlogList', jsonObj).then((response) => {
+                        if (response.body[0] == "Error") {
+                            return alert("系统出现错误,请联系管理员.");
+                        }
+                        else {
+                            this.BlogJson = response.body;
+                        }
+                    });
+                }
             }
         })
     </script>
